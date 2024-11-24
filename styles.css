@@ -1,0 +1,342 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text for readability */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header and Navigation styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #013220;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #FFFFFF; /* White text */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #50C878; /* Emerald green on hover */
+}
+
+/* Section styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    scroll-margin-top: 70px;
+}
+
+section:nth-of-type(odd) {
+    background-color: #000000; /* Black background */
+}
+
+section:nth-of-type(even) {
+    background-color: #001F3F; /* Dark blue background */
+}
+
+section h1 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #50C878; /* Emerald green text */
+}
+
+section p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #FFFFFF; /* White text */
+}
+
+#about .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 40px; /* Расстояние между изображением и текстом */
+}
+
+#about .about-image {
+    flex: 2;
+}
+
+#about .about-text {
+    flex: 2;
+    text-align: center;
+}
+#about .about-image img {
+    width: 500px; /* Фиксированная ширина */
+    height: 500px; /* Фиксированная высота для круговой формы */
+    border-radius: 50%;
+    object-fit: cover; /* Обеспечивает заполнение изображения без искажений */
+    border: 5px solid #50C878; /* Emerald green border */
+    display: block;
+    margin: 0 auto;
+}
+
+#about .resume img {
+    width: 100px; /* Фиксированная ширина */
+    height: 50px; 
+}
+
+/* Дополнительное изменение для мобильных устройств */
+@media (max-width: 768px) {
+    #about .about-image img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #013220; /* Dark emerald green */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#about .resume {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    font-size: 24px;
+    background-color: #00be19;
+}
+
+#about .resume:hover {
+    background-color: #007c11;
+}
+
+.contact-btn i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Specific Contact Buttons */
+.contact-btn.telegram {
+    background-color: #0088cc;
+}
+
+.contact-btn.telegram:hover {
+    background-color: #006699;
+}
+
+.contact-btn.email {
+    background-color: #D44638;
+}
+
+.contact-btn.email:hover {
+    background-color: #B03024;
+}
+
+.contact-btn.Linkedin {
+    background-color: #0c64c5;
+}
+.contact-btn.Linkedin:hover {
+    background-color: #0a4c92;
+}
+.contact-btn.phone {
+    background-color: #34B7F1;
+}
+
+.contact-btn.phone:hover {
+    background-color: #2196F3;
+}
+
+.contact-btn.discord {
+    background-color: #7289DA;
+}
+
+.contact-btn.discord:hover {
+    background-color: #5B6EAE;
+}
+
+/* Styles for 'My Works' section */
+#works {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#works h1 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #50C878; /* Emerald green */
+}
+
+/* Work Item Container */
+.work-item {
+    display: flex;
+    align-items: stretch; /* Ensures image and text have equal height */
+    margin-bottom: 60px;
+}
+
+.work-item.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Text and Image Containers */
+.work-text, .work-image {
+    width: 50%;
+    padding: 20px;
+}
+
+.work-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space between elements */
+    text-align: center; /* Align text to the left */
+}
+
+.work-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    border: 5px solid #50C878; /* Optional border */
+}
+
+/* Project Title */
+.work-text h2 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #50C878;
+}
+
+/* Project Description */
+.work-text p {
+    font-size: 21px;
+    color: #FFFFFF;
+    margin-bottom: 0; /* Удален отступ между абзацами */
+}
+
+/* Play Link */
+.play-link {
+    margin-top: 20px; /* Добавляем отступ сверху, чтобы отделить ссылку от последнего абзаца */
+}
+
+.play-link a {
+    color: #50C878;
+    text-decoration: underline;
+}
+
+.play-link a:visited,
+.play-link a:hover,
+.play-link a:active {
+    color: #50C878; /* Одинаковый цвет независимо от состояния */
+}
+
+/* Общие стили для всех ссылок в 'work-text' */
+.work-text a {
+    color: #50C878;
+    text-decoration: underline;
+}
+
+.work-text a:visited,
+.work-text a:hover,
+.work-text a:active {
+    color: #50C878; /* Одинаковый цвет независимо от состояния */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .work-item, .work-item.reverse {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-text, .work-image {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .work-item, .work-item.reverse {
+        margin-bottom: 40px;
+    }
+
+    .work-text {
+        text-align: center;
+    }
+
+    .play-link {
+        margin-top: 20px;
+    }
+
+    /* Центрирование изображения и текста в разделе 'About Me' на мобильных устройствах */
+    #about img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Notification Styles */
+.notification {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Experience Table Images */
+.experience-table img {
+    max-height: 150px;
+}
