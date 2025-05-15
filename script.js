@@ -3,11 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         copyToClipboard('ya.karac2013@yandex.ru', 'Email address copied to clipboard!');
     });
-
+    /*
     document.getElementById('phoneBtn').addEventListener('click', function (event) {
         event.preventDefault();
         copyToClipboard('+1234567890', 'Phone number copied to clipboard!');
     });
+    */
 
     function copyToClipboard(text, message) {
         navigator.clipboard.writeText(text).then(function() {
