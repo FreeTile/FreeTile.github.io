@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>My Portfolio</title>
+        <title>Mark Karas</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <script src="script.js"></script>
@@ -10,8 +10,11 @@
     <body>
 
         <header>
-            <nav>
-                <ul>
+            <nav class="nav-container">
+                <div class="logo">
+                    <img src="Images/Logo.png" alt="Logo">
+                </div>
+                <ul class="nav-links">
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#experience">My Experience</a></li>
                     <li><a href="#works">My Works</a></li>
@@ -80,70 +83,56 @@
 
                 </div>
             </div>
-        
+
             <div class="work-item reverse">
-                <div class="work-image">
-                    <img src="Images/FlappyBird.png" alt="Flappy bird">
-                </div>
-                <div class="work-text">
-                    <h2><a href="https://github.com/FreeTile/FlappyBird" target="_blank">Flappy Bird Clone</a></h2>
-                    <p>
-                        During our second semester we created a Flappy Bird Clone game using HTML, CSS and Phaser, a library for creating web games.
-                    </p>
-                    <p>
-                        The purpose of this project was to understand a scripting language and work with the position, rotation, and velocity of objects.
-                    </p>
-                    <div class="play-link">
-                        <a href="https://freetile.github.io/FlappyBird/" target="_blank">You can play this game here</a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="work-item">
                 <div class="work-image">
                     <img src="Images/Platformer.png" alt="2D Platformer">
                 </div>
                 <div class="work-text">
                     <h2><a href="https://github.com/FreeTile/Final_project_build" target="_blank">2D Platformer</a></h2>
                     <p>
-                        This is also a Phaser project. But this time we created a 2D platformer.
+                        This is a Phaser (JS) project from one of our course at college.
                     </p>
                     <p>
-                        Technically, this project is similar to the previous one, but this time we worked more with handling input from the player.
+                        A simple 2D platformer where you can use WADs to walk and jump, and your goal is to get as many points as possible without falling.
                     </p>
                     <div class="play-link">
                         <a href="https://freetile.github.io/Final_project_build/" target="_blank">You can play this game here</a>
                     </div>
                 </div>
             </div>
-
-            <div class="work-item reverse">
+        
+            <div class="work-item">
                 <div class="work-image">
-                    <img src="Images/RobotRampage.jpg" alt="Robot Rampage">
+                    <img src="Images/Whisper.png" alt="The Whisper">
                 </div>
                 <div class="work-text">
-                    <h2><a href="https://github.com/FreeTile/Robot-Rampage" target="_blank">Robot Rampage</a></h2>
+                    <h2><a href="https://sh1rax.itch.io/the-whisper" target="_blank">The Whisper</a></h2>
                     <p>
-                        Robot rampage is a 3D first person shooter where you have to survive infinite waves of robots on the small arena. You can use weapons such as assault rifle to kill them.
-                        There are also some pickups which can give you ammo, health and armor.
+                        My first full-fledged project, which I worked on during my last semester of college.
                     </p>
                     <p>
-                        This game was created step by step from guide book for Unity 3D.
+                        This is a first-person 3D horror game where the main character by chance enters an abandoned house, after which the door is locked, and the only way out is to reach the end and realize what happened in this place.
                     </p>
                 </div>
             </div>
 
-            <div class="work-item">
+            <div class="work-item reverse">
                 <div class="work-image">
-                    <img src="Images/BobbleHeadWars.jpg" alt="BobbleHeadWars">
+                    <img src="Images/RoguelikeRPG.png" alt="Roguelike RPG">
                 </div>
                 <div class="work-text">
-                    <h2><a href="https://github.com/FreeTile/BobbleHeadWars" target="_blank">Bobble Head Wars</a></h2>
+                    <h2>Roguelike RPG</h2>
                     <p>
-                        This is a 3d person top-down shooter. You have to kill all aliens to pass level and go to the next one. You can grab power up, which spawns somewhere on the battle field.
+                        
+                        A personal project I'm currently working on. It's in early stage of development.
                     </p>
                     <p>
-                        This game also was created from the book, which I mentioned in the previous project.
+                        It is a 2D RPG game with turn-based combat.
+
+                        Unique feature: death and multiple attempts are necessary here. The variety of builds and procedurally generated equipment provides replayability and pushes the player to learn the mechanics and create a personal style of play.
+                    
+                        All visual elements are currently placeholders and will be replaced by the release.
                     </p>
                 </div>
             </div>
@@ -174,7 +163,7 @@
         </section>
 
         <footer>
-            <p>&copy; 2024 Mark Karas</p>
+            <p>&copy; 2025 Mark Karas</p>
         </footer>
 
         <div class="custom-cursor"></div>
