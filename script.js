@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('emailBtn').addEventListener('click', function (event) {
         event.preventDefault();
-        copyToClipboard('ya.karac2013@yandex.ru', 'Email address copied to clipboard!');
+        copyToClipboard('karas.mark@outlook.com', 'Email address copied to clipboard!');
     });
     /*
     document.getElementById('phoneBtn').addEventListener('click', function (event) {
@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
     */
 
     function copyToClipboard(text, message) {
-        navigator.clipboard.writeText(text).then(function() {
+        navigator.clipboard.writeText(text).then(function () {
             showNotification(message);
-        }, function(err) {
+        }, function (err) {
             console.error('Could not copy text: ', err);
         });
     }
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         notification.innerText = message;
         notification.style.display = 'block';
 
-        setTimeout(function() {
+        setTimeout(function () {
             notification.style.display = 'none';
         }, 3000);
     }
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let cursorX = 0, cursorY = 0;
     document.documentElement.style.cursor = 'none';
 
-    document.addEventListener('mousemove', function(e) {
+    document.addEventListener('mousemove', function (e) {
         mouseX = e.clientX;
         mouseY = e.clientY;
     });
